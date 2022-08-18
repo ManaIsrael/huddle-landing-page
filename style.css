@@ -1,0 +1,133 @@
+:root {
+      --color-violet: hsl(257, 40%, 49%);
+      --color-soft-magenta: hsl(300, 69%, 71%);
+      --ff-popins: 'Poppins';
+      --ff-opensans: 'Open Sans';
+    }
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: var(--color-violet);
+      max-width: 375px;
+      font-weight: 400;
+      font-family: var(--ff-opensans), sans-serif;
+      color: white;
+    }
+
+    main {
+      background: url(./images/bg-mobile.svg) no-repeat;
+    }
+    nav {
+     padding: 1em 0 3.5em 1em;
+    }
+    nav img {
+      width: 10em;
+    }
+    .image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 3.5em;
+    }
+    .image div, .text div {
+      max-width: 335px;
+    }
+    .image img {
+      width: 100%;
+    }
+    .text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .text div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 3.5em;
+      text-align: center;
+    }
+    .text h1 {
+      font-family: var(--ff-popins), sans-serif;
+      margin-bottom: 1em;
+    }
+    .text p {
+      margin-bottom: 2em;
+    }
+    .text div input {
+      border: none;
+      border-radius: 25px;
+      width: 75%;
+      padding: 1em 0;
+      cursor: pointer;
+      color: var(--color-violet);
+      box-shadow: 2px 2px 5px hsl(257, 40%, 30%);
+    }
+    input:hover {
+      color: white !important;
+      background-color: var(--color-soft-magenta);
+    }
+    .icons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 3.5em;
+    }
+    .icons i {
+      border: 1px solid;
+      padding: .5em;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    .icons i:hover {
+      color: var(--color-soft-magenta);
+    }
+    .icons #twitter {
+      margin: 0 .5em;
+    }
+
+    @media(min-width: 376px) {
+      body {
+        max-width: 1440px;
+      }
+      main {
+        background: url(./images/bg-desktop.svg) no-repeat;
+        display: flex;
+        flex-direction: column;
+      }
+      nav, .parent {
+        padding: 2em 0 3.5em 2em;
+      }
+      .parent {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+      .image {
+        margin-right: 2em;
+        margin-bottom: 0;  
+      }
+      .image div {
+        max-width: 600px;
+      }
+      .text div {
+        align-items: flex-start;
+        text-align: left;
+        margin-top: 2em;
+        margin-bottom: 0;
+      }
+      .text h1 {
+        font-weight: 600;
+      }
+     .text div input {
+        width: 50%;
+      }
+      .icons {
+        justify-content: flex-end;
+        margin-bottom: 1em;
+        padding-right: 3.5em;
+      }
+    }
