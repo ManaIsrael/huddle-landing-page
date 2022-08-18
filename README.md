@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: 
+- Solution URL: https://github.com/ManaIsrael/huddle-landing-page
 - Live Site URL: 
 
 ## My process
